@@ -50,6 +50,7 @@ namespace BibliotecaConductor
         {
             int acumuladorKmSemana = 0;
 
+            //Para cada int del elemento KmDia en array kilometros, se acumula los km.
             foreach (int kmDia in kilometros) //array de tipo int 
             {
                 acumuladorKmSemana += kmDia; //Por cada dia va acumulando los km.
@@ -58,7 +59,7 @@ namespace BibliotecaConductor
             return acumuladorKmSemana;
         }
 
-        public string ConductorMasKmSemana(Conductor[] aConductores) //array de tipo conductor que almacena datos de los conductores
+        public static string ConductorMasKmSemana(Conductor[] aConductores) //array de tipo conductor que almacena datos de los conductores
         {
             int kmEnLaSemana = 0;
             int maximoKmSemana = 0;
@@ -81,7 +82,7 @@ namespace BibliotecaConductor
             return nombreConductor;
         }
 
-        public string ConductorMasKmDia3(Conductor[] aConductores) //Nombre del array aConductores, tipo Conductor
+        public static string ConductorMasKmDia3(Conductor[] aConductores) //Nombre del array aConductores, tipo Conductor
         {
             int kmDiaTres = 0;
             int maximoKmDia = 0;
@@ -104,7 +105,7 @@ namespace BibliotecaConductor
             return nombreConductor;
         }
 
-        public string ConductorMasKmDia5(Conductor[] aConductores) //Nombre del array aConductores, tipo Conductor
+        public static string ConductorMasKmDia5(Conductor[] aConductores) //Nombre del array aConductores, tipo Conductor
         {
             int kmDiaCinco = 0;
             int maximoKmDia = 0;
