@@ -58,5 +58,10 @@ namespace Ejercicicio_V02bis
                 e.Cancel = true; //cancel es true es porque selecciono el NO, no desea salir
             }
         }
+
+        private void txtNumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

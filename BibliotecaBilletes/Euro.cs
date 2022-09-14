@@ -77,5 +77,41 @@ namespace BibliotecaBilletes
             return new Euro(euros.cantidad - ((Euro)pesos).cantidad);
         }
         #endregion
+
+        #region Comparar cantiadades de Euros a Dolares
+        public static bool operator ==(Euro euros, Dolar dolares)
+        {
+            return euros.cantidad == dolares.GetCantidad();
+        }
+
+        public static bool operator !=(Euro euros, Dolar dolares)
+        {
+            return !(euros == dolares);
+        }
+        #endregion
+
+        #region Comparar cantiadades de Euros a Pesos
+        public static bool operator ==(Euro euros, Pesos pesos)
+        {
+            return euros.cantidad == pesos.GetCantidad();
+        }
+
+        public static bool operator !=(Euro euros, Pesos pesos)
+        {
+            return !(euros == pesos);
+        }
+        #endregion
+
+        #region Comparar cantiadades de Euro a Euro
+        public static bool operator ==(Euro euro1, Euro euro2)
+        {
+            return euro1.cantidad == euro2.cantidad;
+        }
+
+        public static bool operator !=(Euro euro1, Euro euro2)
+        {
+            return !(euro1 == euro2);
+        }
+        #endregion
     }
 }

@@ -51,6 +51,7 @@ namespace Ejercicicio_V02bis
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(57, 23);
             this.txtNumero.TabIndex = 1;
+            this.txtNumero.TextChanged += new System.EventHandler(this.txtNumero_TextChanged);
             this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // lstTabla
