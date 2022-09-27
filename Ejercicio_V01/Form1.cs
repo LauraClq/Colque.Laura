@@ -29,6 +29,7 @@ namespace Ejercicio_V01
 
             if (!ValidarCampos()) //si No me devuleve ningun true es poruqe no hay ningun campo vacio
             {
+                //es decir devuelve true si hay campos null o con espacio, de lo contraio false
                 Form2 saludar = new Form2(titulo,mensaje);
                 saludar.ShowDialog();
             }

@@ -21,6 +21,7 @@ namespace Ejercicio_V04bis
             this.groupBox3.Text = "Lista de numeros";
             this.radioButton1.Text = "Ascendente";
             this.radioButton2.Text = "Descendente";
+            //tienen que estar en un Load forma correcta
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

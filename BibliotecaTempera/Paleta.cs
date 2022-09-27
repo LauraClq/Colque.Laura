@@ -11,6 +11,11 @@ namespace BibliotecaTempera
         private List<Tempera> listTemperas;
         private int cantidadMaximaColores;
 
+        public int CantidadTemperas 
+        {
+            get { return listTemperas.Count; } //retorna la cantidad de elementos que posee la colección.
+        }
+
         private Paleta()
         {
             this.listTemperas = new List<Tempera>();
@@ -60,21 +65,7 @@ namespace BibliotecaTempera
             return indice;
 
         }
-        /* Otra forma de hacerlo
-         * int tam = listTemperas.Count;
-            int index = -1;
-            for (int i = 0; i < tam; i++)
-            {
-                if(listTemperas[i]==unaTempera)
-                {
-                    index = i;
-                    break;
-                }
-            }
-
-            return index
-         */
-
+        
         public static explicit operator string(Paleta unaPaleta)
         {
             return unaPaleta.Mostrrar();

@@ -9,6 +9,15 @@ namespace BibliotecaTempera
         private string marca;
         private Int32 cantidad;
 
+        public string Marca 
+        {
+            get { return this.marca;  } 
+        }
+        public ConsoleColor Color 
+        {
+            get { return this.color; } 
+        }
+
         #region Constructor de tres parametros
         public Tempera(ConsoleColor color, string marca, Int32 cantidad)
         {
@@ -30,9 +39,9 @@ namespace BibliotecaTempera
         {
             StringBuilder mostrar = new StringBuilder();
 
-            mostrar.AppendLine($"La marca es {this.marca}");
-            mostrar.AppendLine($"El color es: {this.color}");
-            mostrar.AppendLine($"La cantidad es: {this.cantidad}");
+            mostrar.AppendLine($"\nLa marca es: {this.marca}");
+            mostrar.AppendLine($"\nEl color es: {this.color}");
+            mostrar.AppendLine($"\nLa cantidad es: {this.cantidad}");
 
             return mostrar.ToString();
         }

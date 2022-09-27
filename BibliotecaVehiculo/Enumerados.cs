@@ -1,0 +1,1 @@
+﻿public enum Emarcas {Honda, Ford, Zanella, Scania, Iveco, Fiat};
